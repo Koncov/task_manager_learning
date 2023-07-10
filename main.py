@@ -4,7 +4,6 @@ texts = [
     'Построить скворечник',
     'Посмотреть кино',
     'Сходить в магазин',
-    'Рефакторинг'
 ]
 categories = [
     'красота',
@@ -27,9 +26,9 @@ while command != "выход":
         texts.append(new_task)
         categories.append(new_task_ctgr)
     elif command == "изменить":
-        index = int(input("Введить номер задачи для редактирования ")) - 1
+        index = int(input("Введите номер задачи для редактирования ")) - 1
         if 0 <= index < len(texts):
-            pole = input("Какое поле редактирему?")
+            pole = input("Какое поле редактирем? ")
             if pole == "текст":
                 texts[index] = input("Введите текст изменяемой задачи: ")
             elif pole == "категория":
